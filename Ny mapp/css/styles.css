@@ -1,0 +1,51 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 25px 3fr 1fr 25px;
+    grid-template-rows: 1fr 0.3fr 4fr 1fr;
+
+    grid-template-areas: 
+    ". header header ."
+    ". nav nav ."
+    ". main main ."
+    ". footer footer .";
+}
+
+header {
+    background-color: aliceblue;
+    grid-area: header;
+}
+
+nav {
+    background-color: blue;
+    grid-area: nav;
+}
+
+main {
+    background-color: black;
+    grid-area: main;
+}
+.flex-container {
+    background-color: cadetblue;
+    grid-area: sidebar;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cssimg {
+    width: 60%;
+    height: 80%;
+}
+
+.cssimg1 {
+    width: 50%;
+    height: 50%;
+}
+
+footer {
+    background-color: azure;
+    grid-area: footer;
+}
